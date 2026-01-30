@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Rahim Mustaqim</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="main-header container">
+    <div class="header-left">
+      <img src="assets/rahim.jpg.jpeg" alt="Portrait of Rahim Mustaqim" class="profile-img">
+    </div>
+
+    <div class="header-right">
+      <div class="site-title">Rahim Mustaqim, MSc (Eng.)</div>
+      <div class="author-name">Hydraulic & Coastal Engineering</div>
+      <div class="author-field">Specialising in numerical modelling and water-related engineering problems</div>
+
+      <button class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Primary">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="products.html" class="nav-link">Articles & Digital Products</a>
+        <a href="contact.html" class="hire-btn">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>Hydrology, Hydraulic & Coastal Engineering</h1>
+      <p>I provide applied numerical modelling (HEC-HMS, HEC-RAS, Delft3D), flood assessments, and training for academic & industry projects.</p>
+      <a class="cta" href="contact.html">Get in touch</a>
+    </section>
+
+    <section id="services" class="card">
+      <h2>Services & Projects</h2>
+
+      <div class="services-grid">
+        <!-- Service: Pakil -->
+        <article class="service-item">
+          <img class="service-img" src="assets/climate.png" alt="Pakil Pumped Storage modelling" loading="lazy">
+          <div class="service-content">
+            <h3>Pakil Pumped Storage — Laguna de Bay</h3>
+            <p>Hydrology and sedimentation simulation using HEC-HMS, HEC-RAS and Delft Dashboard.</p>
+            <div class="service-actions">
+              <a class="service-doc" href="pakil.pdf" target="_blank" rel="noopener">📄 Report (PDF)</a>
+              <button class="video-btn" data-video="UTPwySG7-8g" aria-haspopup="dialog" aria-label="Open Pakil training video">▶ Watch</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service: JMB -->
+        <article class="service-item">
+          <img class="service-img" src="assets/jmb.jpg" alt="River flood modelling" loading="lazy">
+          <div class="service-content">
+            <h3>River Flood Assessment — PIT 131</h3>
+            <p>HEC-RAS 1D/2D flood modelling and diversion analysis.</p>
+            <div class="service-actions">
+              <a class="service-doc" href="jmb.pdf" target="_blank" rel="noopener">📄 Summary (PDF)</a>
+              <div class="meta">Location: Borneo · Client: PT Tectona Mitra Utama</div>
+              <button class="video-btn" data-video="rFTdmlR0mfY" aria-label="Open JMB demo video">▶ Demo</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service: Training (Saumy) -->
+        <article class="service-item">
+          <img class="service-img" src="assets/saumy.png" alt="Training session support" loading="lazy">
+          <div class="service-content">
+            <h3>HEC-HMS & HEC-RAS Training</h3>
+            <p>Academic & professional training sessions with materials and recorded demos.</p>
+            <div class="service-actions">
+              <a class="service-doc" href="saumy.jpg.png" target="_blank" rel="noopener">📄 Evidence</a>
+              <button class="video-btn" data-video="UTPwySG7-8g" aria-label="Open training video">▶ Session</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service: Guidelines (Jasa Tirta) -->
+        <article class="service-item">
+          <img class="service-img" src="assets/jasatirta.jpg" alt="Sustainable water supply guidelines" loading="lazy">
+          <div class="service-content">
+            <h3>Guidelines for Sustainable Water Supply Management</h3>
+            <p>Framework for sustainable water supply under Perum Jasa Tirta II authority.</p>
+            <div class="service-actions">
+              <a class="service-doc" href="jasatirta.pdf" target="_blank" rel="noopener">📄 Report (PDF)</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video modal (lazy loads iframe) -->
+  <div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <button class="close-modal" aria-label="Close video">✕</button>
+      <div id="videoWrapper" class="video-wrapper" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer container">
+    <div>© <span id="year"></span> Rahim Mustaqim</div>
+    <div class="muted">Advancing water, coastal, and ocean engineering through research and practice</div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
